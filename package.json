@@ -1,0 +1,24 @@
+{
+  "name": "regex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "extract.js",
+  "type": "module",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJ234/regex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KJ234/regex/issues"
+  },
+  "homepage": "https://github.com/KJ234/regex#readme"
+}

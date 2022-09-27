@@ -18,5 +18,5 @@ function processOneLine(line) {
     // example of gathering information
     lineCount++;
 
-    // add code here to find emails in the line
+    // add code here to find emails in the line 
 }
