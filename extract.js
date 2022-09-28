@@ -25,27 +25,28 @@ function processOneLine(line) {
     
 
     
-  
+  let emailCount = 0
 
-    
-    let emailCount = 0;
-
-    let emailRegex =/[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}/g
-    
+    let emailRegex =/[a-zA-Z0-9._-]+@[?:softwire0-9.-]+\.[a-zA-Z]{2,4}/g  /* {2,4} Means the string has minimum 2 characters and maximum 4 characters 
+                                                                            (The length of string should be greater than or equal to 2 
+                                                                             and less than or equal to 4). */
     text.match(emailRegex).forEach(function(email) {
     console.log(email);
+
     
+     
 
-//   if (text.substring === '@softwire.com') console.log(text)
+     email.split().forEach(           // ("\n") new line
+        processEachEmail
+    )
 
-//   text.match("@softwire.com").forEach(processEachEmail
-//   )
+    console.log(`Processed ${emailCount} address`);
 
-//     console.log(`Processed ${emailCount} address`);
-
-//     function processEachEmail(line) {
+    function processEachEmail() {
        
-//         emailCount++;
+        emailCount ++;
 
   }
+
+    }
     )}
