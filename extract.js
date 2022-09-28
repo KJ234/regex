@@ -14,6 +14,7 @@ text.split("\n").forEach(
 
 
 console.log(`Processed ${lineCount} lines.`);
+console.log(`Processed ${emailCount} address`);
 
 // extract information from one line
 // and update global variables
@@ -25,29 +26,23 @@ function processOneLine(line) {
     
 
     
-  let emailCount = 0
+let emailCount = 0
 
-    let emailRegex =/[a-zA-Z0-9._-]+@[(?:softwire)0-9.-]+\.[a-zA-Z]{2,4}/g  /* {2,4} Means the string has minimum 2 characters and maximum 4 characters 
+let emailRegex =/[a-zA-Z0-9._-]+@[(?:softwire)0-9.-]+\.[a-zA-Z]{2,4}/g  /* {2,4} Means the string has minimum 2 characters and maximum 4 characters 
                                                                             (The length of string should be greater than or equal to 2 
                                                                              and less than or equal to 4). */
     text.match(emailRegex).forEach(function(email) {
     console.log(email);
 
     
-     
-
      email.split().forEach(           // ("\n") new line
         processEachEmail
     )
 
-    console.log(`Processed ${emailCount} address`);
 
     function processEachEmail() {
-       
         emailCount ++;   
-
-        
-  }
+    }
 
     }
     )}
